@@ -8,7 +8,7 @@ const msal = require('@azure/msal-node');
 const msalConfig = {
 	auth: {
 		clientId: '<Application ID>',
-		authority: process.env.AAD_ENDPOINT + 'fa07cb78-c80f-48b3-b560-7d4f6d566228',
+		authority: process.env.AAD_ENDPOINT + '<TENANT_ID>',
 		clientSecret: process.env.CLIENT_SECRET,
 	}
 };
@@ -23,7 +23,7 @@ const tokenRequest = {
 };
 
 const apiConfig = {
-	uri: 'https://api.sbs.digital/api/cim17/9/MeterReadings2/get',
+	uri: 'https://api2.sbs.digital/api/cim17/9/MeterReadings2/get',
 };
 
 /**
